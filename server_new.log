@@ -1,0 +1,44 @@
+2012-08-19 21:59:10.751 [dispatcherRoute]-[ERROR]-[com.tongtech.tmqi.jmsclient.ExceptionHandler:406] Throw JMS Exception: 
+com.tongtech.jms.JMSException: [C4038]: javax.jms.JMSException: errorCode:[1017] error:[no space in [qinghesq] MsgDes]
+	at com.tongtech.tmqi.jmsclient.ExceptionHandler.getJMSException(ExceptionHandler.java:347)
+	at com.tongtech.tmqi.jmsclient.ExceptionHandler.handleException(ExceptionHandler.java:300)
+	at com.tongtech.tmqi.jmsclient.ExceptionHandler.handleException(ExceptionHandler.java:276)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.writeJMSMessage(MessageProducerImpl.java:212)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.writeJMSMessage(MessageProducerImpl.java:177)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.send(MessageProducerImpl.java:606)
+	at com.tongtech.tmqi.jmsclient.QueueSenderImpl.send(QueueSenderImpl.java:71)
+	at com.greatsoft.transq.message.queue.TLQueue.put(TLQueue.java:73)
+	at com.greatsoft.server.dispatcher.DispatcherServerRoute.putMessage(DispatcherServerRoute.java:149)
+	at com.greatsoft.server.dispatcher.DispatcherServerRoute.run(DispatcherServerRoute.java:98)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.jms.JMSException: errorCode:[1017] error:[no space in [qinghesq] MsgDes]
+	at com.tongtech.jmsclient.filemessage.FileMessageSender.sendFileInfo(FileMessageSender.java:171)
+	at com.tongtech.jmsclient.filemessage.FileMessageSender.sendFileMessage(FileMessageSender.java:117)
+	at com.tongtech.jms.protocol.TlqRemoteProtocolHandler.writeJMSMessage(TlqRemoteProtocolHandler.java:1667)
+	at com.tongtech.tmqi.jmsclient.WriteChannel.sendWithFlowControl(WriteChannel.java:130)
+	at com.tongtech.tmqi.jmsclient.WriteChannel.writeJMSMessage(WriteChannel.java:83)
+	at com.tongtech.tmqi.jmsclient.SessionImpl.writeJMSMessage(SessionImpl.java:782)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.writeJMSMessage(MessageProducerImpl.java:193)
+	... 7 more
+2012-08-19 22:00:51.114 [dispatcherRoute]-[ERROR]-[com.tongtech.tmqi.jmsclient.ExceptionHandler:406] Throw JMS Exception: 
+com.tongtech.jms.JMSException: [C4038]: javax.jms.JMSException: errorCode:[1017] error:[no space in [qinghesq] MsgDes]
+	at com.tongtech.tmqi.jmsclient.ExceptionHandler.getJMSException(ExceptionHandler.java:347)
+	at com.tongtech.tmqi.jmsclient.ExceptionHandler.handleException(ExceptionHandler.java:300)
+	at com.tongtech.tmqi.jmsclient.ExceptionHandler.handleException(ExceptionHandler.java:276)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.writeJMSMessage(MessageProducerImpl.java:212)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.writeJMSMessage(MessageProducerImpl.java:177)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.send(MessageProducerImpl.java:606)
+	at com.tongtech.tmqi.jmsclient.QueueSenderImpl.send(QueueSenderImpl.java:71)
+	at com.greatsoft.transq.message.queue.TLQueue.put(TLQueue.java:73)
+	at com.greatsoft.server.dispatcher.DispatcherServerRoute.putMessage(DispatcherServerRoute.java:149)
+	at com.greatsoft.server.dispatcher.DispatcherServerRoute.run(DispatcherServerRoute.java:98)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.jms.JMSException: errorCode:[1017] error:[no space in [qinghesq] MsgDes]
+	at com.tongtech.jmsclient.filemessage.FileMessageSender.sendFileInfo(FileMessageSender.java:171)
+	at com.tongtech.jmsclient.filemessage.FileMessageSender.sendFileMessage(FileMessageSender.java:117)
+	at com.tongtech.jms.protocol.TlqRemoteProtocolHandler.writeJMSMessage(TlqRemoteProtocolHandler.java:1667)
+	at com.tongtech.tmqi.jmsclient.WriteChannel.sendWithFlowControl(WriteChannel.java:130)
+	at com.tongtech.tmqi.jmsclient.WriteChannel.writeJMSMessage(WriteChannel.java:83)
+	at com.tongtech.tmqi.jmsclient.SessionImpl.writeJMSMessage(SessionImpl.java:782)
+	at com.tongtech.tmqi.jmsclient.MessageProducerImpl.writeJMSMessage(MessageProducerImpl.java:193)
+	... 7 more

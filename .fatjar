@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sun Sep 09 12:06:30 CST 2012
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=PutTLQLoop.jar
+manifest.mergeall=true
+manifest.mainclass=com.greatsoft.transq.tools.PutTLQLoop
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<jar|cxf-2.5.3.jar>;<jar|cxf-manifest.jar>;<jar|cxf-services-wsn-api-2.5.3.jar>;<jar|cxf-services-wsn-core-2.5.3.jar>;<jar|geronimo-activation_1.1_spec-1.1.jar>;<jar|geronimo-annotation_1.0_spec-1.1.1.jar>;<jar|geronimo-stax-api_1.0_spec-1.0.1.jar>;<jar|javax.wsdl_1.5.1.v200806030408.jar>
+includes=
